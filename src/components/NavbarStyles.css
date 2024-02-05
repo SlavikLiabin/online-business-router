@@ -42,5 +42,31 @@ header .logo img {
 }
 
 .nav-link {
-    color: #fff;
+  color: #fff;
+}
+
+@media screen and (max-width: 960px) {
+  .hamburger {
+    display: block;
+  }
+  .nav-menu {
+    position: fixed;
+    left: -100%;
+    flex-direction: column;
+    justify-content: center;
+    background-color: var(--darkgray);
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transform: 0.4s;
+  }
+
+  .nav-menu.active {
+    left: 0;
+  }
+
+  .nav-item {
+    margin: 1.5rem 0;
+    font-size: 1.8rem;
+  }
 }
