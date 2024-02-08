@@ -9,7 +9,7 @@ const Navbar = () => {
   const handleClick = () => setClick(!click);
   return (
     <header>
-      <div className="navbar">
+      <nav className="navbar">
         <div className="logo">
           <Link to="/">
             <img src={Logo} alt="logo" />
@@ -22,17 +22,17 @@ const Navbar = () => {
             </Link>
           </li>
           <li className="nav-item">
-            <Link to="/" className="nav-link">
+            <Link to="/pricing" className="nav-link">
               Pricing
             </Link>
           </li>
           <li className="nav-item">
-            <Link to="/" className="nav-link">
+            <Link to="/faq" className="nav-link">
               FAQ
             </Link>
           </li>
           <li className="nav-item">
-            <Link to="/" className="nav-link">
+            <Link to="/contact" className="nav-link">
               Contact
             </Link>
           </li>
@@ -44,7 +44,7 @@ const Navbar = () => {
             <FaBars size={20} style={{ color: "#fff" }} />
           )}
         </div>
-      </div>
+      </nav>
     </header>
   );
 };
